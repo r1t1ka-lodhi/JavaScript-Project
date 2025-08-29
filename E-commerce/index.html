@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <style>
+    body {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    .shop-container {
+      background: #222;
+      padding: 20px;
+      border-radius: 8px;
+      width: 280px;
+    }
+
+    h2 {
+      margin: 10px 0;
+    }
+
+    .product {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 8px 0;
+      background: #333;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    #product-list button {
+      background: purple;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .cart {
+      margin-top: 15px;
+    }
+
+    .cart p {
+      margin: 5px 0;
+    }
+
+    .total-amount {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      color: aquamarine;
+      margin-bottom: 4px;
+    } 
+    .checkout-btn {
+      background: purple;
+      border: none;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="shop-container">
+    <h2>Products</h2>
+    
+    <div id="product-list">
+    </div>
+
+
+    <div class="cart">
+      <h2>Shopping Cart</h2>
+      
+      <div id="cart-items">
+        <p id="empty-cart-item">Your cart is empty</p>
+      </div>
+      <div id="cart-total" class="hidden">
+        <p>Total: <span class="total-amount">$0.00</span></p>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
